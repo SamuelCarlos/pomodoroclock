@@ -8,7 +8,7 @@ let alarme = document.getElementById("alarme")
 
 function incrementaTempo(){
     let tempo = document.getElementById("entradatempo")
-    if(tempo.value < 60){
+    if(tempo.value < 60 && verificador == 0){
         tempo.value++
         modificaVisor(tempo.value)
     }
@@ -16,7 +16,7 @@ function incrementaTempo(){
 
 function decrementaTempo(){
     let tempo = document.getElementById("entradatempo")
-    if(tempo.value > 1){
+    if(tempo.value > 1 && verificador == 0){
         tempo.value--
         modificaVisor(tempo.value)
     }
@@ -24,14 +24,14 @@ function decrementaTempo(){
 
 function incrementaIntervalo(){
     let intervalo = document.getElementById("entradaintervalo")
-    if(intervalo.value < 60){
+    if(intervalo.value < 60 && verificador == 0){
         intervalo.value++
     }
 }
 
 function decrementaIntervalo(){
     let intervalo = document.getElementById("entradaintervalo")
-    if(intervalo.value > 1){
+    if(intervalo.value > 1 && verificador == 0){
         intervalo.value--
     }
 }
